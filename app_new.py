@@ -171,6 +171,7 @@ elif page == "Multivariate Analysis":
         if pairplot_cols:
             pairplot_fig = sns.pairplot(data[pairplot_cols])
             st.pyplot(pairplot_fig)
+            
         else:
             st.warning("Please select at least one column for the Pairplot.")
     else:
